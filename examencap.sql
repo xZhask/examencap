@@ -1,0 +1,69 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: localhost:3306
+-- Tiempo de generación: 18-04-2024 a las 21:24:13
+-- Versión del servidor: 8.0.30
+-- Versión de PHP: 8.1.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `examencap`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `preguntas`
+--
+
+CREATE TABLE `preguntas` (
+  `idpregunta` int NOT NULL,
+  `pregunta` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Volcado de datos para la tabla `preguntas`
+--
+
+INSERT INTO `preguntas` (`idpregunta`, `pregunta`) VALUES
+(1, 'TODA PERSONA TIENE DERECHO: A MANTENER RESERVA SOBRE SUS CONVICCIONES POLÍTICAS, FILOSÓFICAS, RELIGIOSAS O DE CUALQUIER OTRA ÍNDOLE ASÍ COMO A:'),
+(2, 'EDUCACIÓN PARA LA VIDA  Y  EL  TRABAJO.  LOS  MEDIOS  DE  COMUNICACIÓN  SOCIAL.  LA  FORMACIÓN  ÉTICA Y CÍVICA Y LA ENSEÑANZA DE LA CONSTITUCIÓN Y DE LOS DERECHOS HUMANOS SON:'),
+(3, 'EDUCACIÓN PARA LA VIDA  Y  EL  TRABAJO.  LOS  MEDIOS  DE  COMUNICACIÓN  SOCIAL.  LA  FORMACIÓN  ÉTICA Y CÍVICA Y LA ENSEÑANZA DE LA CONSTITUCIÓN Y DE LOS DERECHOS HUMANOS SON:'),
+(4, 'JORNADA ORDINARIA DE TRABAJO. LA JORNADA ORDINARIA DE TRABAJO ES DE 8 HORAS DIARIAS   O   48 HORAS SEMANALES COMO MÁXIMO.  EN  CASO  DE  JORNADAS  ACUMULATIVAS  O  ATÍPICAS,  EL  PROMEDIO DE HORAS TRABAJADAS EN EL PERIODO CORRESPONDIENTE:'),
+(5, 'EL VOTO ES PERSONAL, IGUAL, LIBRE, SECRETO Y OBLIGATORIO HASTA LOS');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `preguntas`
+--
+ALTER TABLE `preguntas`
+  ADD PRIMARY KEY (`idpregunta`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `preguntas`
+--
+ALTER TABLE `preguntas`
+  MODIFY `idpregunta` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
