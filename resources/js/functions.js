@@ -18,9 +18,13 @@ window.addEventListener("load", async () => {
 })
 
 btnNextQuestion.addEventListener('click',(e) =>{
-   e.preventDefault(),
-   
-   console.log(arrPreguntas[0])
+   e.preventDefault();
+   let max = arrPreguntas.length;
+
+   let numRand = Math.floor(Math.random()*max);
+   //console.log(arrPreguntas[max])
+   //console.log(max)
+   console.log(numRand)
   });
 
 
